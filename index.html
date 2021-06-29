@@ -1,179 +1,221 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-        <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    </head>
-    <body>
-        <header>
-            <img id="logo" src="images/abrLogo.png">
-            <nav>
-                <a href="#">Adoption</a>
-                <a href="./waysToHelp.html">Ways to help</a>
-                <a href="#">Re-homing</a>
-                <a href="#">Merch</a>
-                <a href="#">Resources</a>
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand">
+                        <img class="logoImage" src="images/abrLogo.png">
+                    </a>
+                    <ul class="navbar-nav ms-auto me-5">
+                        <li class="nav-item"><a class="nav-link active" href="#">Adoption</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="./waysToHelp.html">Ways to help</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Re-homing</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Merch</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Resources</a></li>
+                    </ul>
+                    <button class="btn btn-warning" id="donateButton">DONATE</button>
+                </div>
             </nav>
-            <button id="donateButton">DONATE</button>
-        </header>
-        <section id="hero">
-            <div class="left">
-                <h2>Find your perfect match</h2>
-                <p>Adopting a rescued boxer saves lives, and sometimes the life saved isn’t just the dog.</p>
-                <button class="btn btn-primary">AVAILABLE DOGS</button>
+        </div>
+    </header>
+    <section class="container-fluid" id="hero">
+        <div class="row align-items-start">
+            <div class="col px-5 yellowBg align-self-stretch d-flex flex-column justify-content-center">
+                <h2 class="py-4 fw-bold textHighlight" style="font-size: 52px;">Find your perfect match</h2>
+                <p class="py-4 fs-6">Adopting a rescued boxer saves lives, and sometimes the life saved isn’t just the dog.</p>
+                <button class="btn btn-primary fs-5 py-3">AVAILABLE DOGS</button>
             </div>
-            <div class="right">
+            <div class="col">
                 <img id="heroImg" src="images/heroImg.png">
             </div>
-        </section>
-        <section id="mission">
-            <div class="top">
-                <p>SERVING THE ENTIRE STATE OF TEXAS</p>
+        </div>
+    </section>
+    <section class="container-fluid" id="mission">
+        <div class="d-flex align-items-center justify-content-center textInverse navyBg pt-3 fw-bold mb-4">
+            <p>SERVING THE ENTIRE STATE OF TEXAS</p>
+        </div>
+        <div class="d-flex flex-column align-items-center justify-content-center">
+            <h4 class="fw-bold fs-6 mt-5 mb-4">OUR MISSION</h4>
+            <i class="px-5 mx-5 mb-5 text-center">To balance the health, safety, and welfare needs of canines in the state of Texas by providing
+                nourishment and
+                a safe environment for unwanted, stray, abused, and impounded Boxers. Once placed in new homes they
+                become more
+                than just pets, they become family.</i>
+        </div>
+    </section>
+    <section class="container-fluid" id="actions">
+        <div class="d-flex flex-column align-items-center justify-content-center">
+            <h3 class="sectionHeader centered textHighlight fw-bold mt-3 mb-4">Ways to Help</h3>
+            <p class="fw-light mb-5">If you can’t adopt, here are some alternative options for you – every dollar goes a long way to help us
+                help
+                them.</p>
+        </div>
+        <div class="d-flex align-items-center justify-content-evenly my-5 pb-5">
+            <div class="d-flex flex-column align-items-center justify-content-center flex-grow-1">
+                <img src="images/volunteer.svg">
+                <button class="btn btn-warning mt-4 w-50">VOLUNTEER</button>
             </div>
-            <div class="bottom">
-                <h4>OUR MISSION</h4>
-                <i>To balance the health, safety, and welfare needs of canines in the state of Texas by providing nourishment and a safe environment for unwanted, stray, abused, and impounded Boxers. Once placed in new homes they become more than just pets, they become family.</i>
+            <div class="d-flex flex-column align-items-center justify-content-center flex-grow-1">
+                <img src="images/foster.svg">
+                <button class="btn btn-warning mt-4 w-50">BECOME A FOSTER</button>
             </div>
-        </section>
-        <section id="actions">
-            <div>
-                <h3 class="sectionHeader centered">Ways to Help</h3>
-                <p>If you can’t adopt, here are some alternative options for you – every dollar goes a long way to help us help them.</p>
+            <div class="d-flex flex-column align-items-center justify-content-center flex-grow-1">
+                <img src="images/donate.svg">
+                <button class="btn btn-warning mt-4 w-50">DONATE</button>
             </div>
-            <div id="actionRow">
-                <div class="actionIcon">
-                    <img src="images/volunteer.svg">
-                    <button class="btn btn-warning">VOLUNTEER</button>
-                </div>
-                <div class="actionIcon">
-                    <img src="images/foster.svg">
-                    <button class="btn btn-warning">BECOME A FOSTER</button>
-                </div>
-                <div class="actionIcon">
-                    <img src="images/donate.svg">
-                    <button class="btn btn-warning">DONATE</button>
-                </div>
+        </div>
+    </section>
+    <section class="container-fluid" id="rehoming">
+        <div class="row align-items-start py-5 my-5">
+            <div class="col px-5 mx-5 align-self-stretch d-flex flex-column justify-content-center">
+                <h3 class="sectionHeader textHighlight fs-1 fw-bold">Re-homing</h3>
+                <p class="py-4">If you have a stray dog, you will need to go to the local shelter and give the owners a chance to
+                    reclaim.
+                </p>
+                <button class="btn btn-primary">LEARN MORE ABOUT RE-HOMING</button>
             </div>
-        </section>
-        <section id="rehoming">
-            <div class="left">
-                <h3 class="sectionHeader">Re-homing</h3>
-                <p>If you have a stray dog, you will need to go to the local shelter and give the owners a chance to reclaim.</p>
-                <button>LEARN MORE ABOUT RE-HOMING</button>
+            <div class="col">
+                <img width="90%" class="float-start" src="images/rehomingImg.png">
             </div>
-            <div class="right">
-                <img src="images/rehomingImg.png">
-            </div>
-        </section>
-        <section id="merchandise">
-            <h4 class="sectionHeader centered">Merchandise</h4>
-            <div id="productRow">
-                <div class="product">
+        </div>
+    </section>
+    <section class="container-fluid" id="merchandise">
+        <div class="d-flex flex-column align-items-center justify-content-center my-5 py-5">
+            <h4 class="sectionHeader textHighlight fs-1 fw-bold mb-5">Merchandise</h4>
+            <div class="d-flex align-items-center justify-content-evenly w-100 mb-5">
+                <div class="d-flex flex-column align-items-center justify-content-center">
                     <img src="images/TshirtImg.png">
-                    <a href="#">ABR T-SHIRT<br>$15.99</a>
+                    <a class="text-center" href="#">ABR T-SHIRT<br>$15.99</a>
                 </div>
-                <div class="product">
+                <div class="d-flex flex-column align-items-center justify-content-center">
                     <img src="images/HoodieImg.png">
-                    <a href="#">ABR HOODIE<br>$15.99</a>
+                    <a class="text-center" href="#">ABR HOODIE<br>$15.99</a>
                 </div>
-                <div class="product">
+                <div class="d-flex flex-column align-items-center justify-content-center">
                     <img src="images/ShortsImg.png">
-                    <a href="#">ABR BOXER SHORTS<br>$15.99</a>
+                    <a class="text-center" href="#">ABR BOXER SHORTS<br>$15.99</a>
                 </div>
-                <div class="product">
+                <div class="d-flex flex-column align-items-center justify-content-center">
                     <img src="images/ToteImg.png">
-                    <a href="#">ABR TOTE BAG<br>$15.99</a>
+                    <a class="text-center" href="#">ABR TOTE BAG<br>$15.99</a>
                 </div>
             </div>
-            <button>VIEW MERCHANDISE</button>
-        </section>
-        <section id="resources">
-            <div class="left">
-                <img src="images/ResourcesImg.png">
+            <button class="btn btn-primary">VIEW MERCHANDISE</button>
+        </div>
+    </section>
+    <section id="resources">
+        <div class="row align-items-start my-5 py-5">
+            <div class="col">
+                <img width="90%" class="float-end" src="images/ResourcesImg.png">
             </div>
-            <div class="right">
-                <h3 class="sectionHeader">Resources</h3>
-                <p>Below are resources that will help you find other organizations that save and shelter pets as well as preferred veterinarians, boarding facilities, pet sitters, trainers and other dog related services and products.</p>
-                <button>LEARN MORE ABOUT RESOURCES</button>
+            <div class="col px-5 mx-5 align-self-stretch d-flex flex-column justify-content-center">
+                <h3 class="sectionHeader textHighlight fs-1 fw-bold">Resources</h3>
+                <p class="py-4">Below are resources that will help you find other organizations that save and shelter pets as well as
+                    preferred
+                    veterinarians, boarding facilities, pet sitters, trainers and other dog related services and
+                    products.</p>
+                <button class="btn btn-primary">LEARN MORE ABOUT RESOURCES</button>
             </div>
-        </section>
-        <section id="successStories" class="carousel">
-            <h3 class="sectionHeader">Success Stories</h3>
-            <div id="testimonial">
-                <div class="left">
+        </div>
+    </section>
+    <section id="successStories" class="container-fluid beigeBg py-5">
+        <div class="d-flex flex-column align-items-center justify-content-center">
+            <h3 class="sectionHeader textHighlight fs-3 fw-bold mb-4 pb-4">Success Stories</h3>
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="col d-flex justify-content-center align-items-center">
                     <img src="images/theMillers.png">
                 </div>
-                <div class="right">
-                    <p>“When we first saw Frank, we knew he was the one. ABR was really exceptional at communication. We knew instantly when we first met him that he was the perfect addition to our family.”</p>
+                <div class="col px-3 mx-3 align-self-stretch d-flex flex-column justify-content-center">
+                    <p>“When we first saw Frank, we knew he was the one. ABR was really exceptional at communication. We
+                        knew
+                        instantly when we first met him that he was the perfect addition to our family.”</p>
                     <h5>THE MILLERS</h5>
                 </div>
             </div>
-            <div id="pages">
+            <div class="mt-5" id="pages">
                 <img src="images/ellipse_fill.svg">
                 <img src="images/ellipse_empty.svg">
                 <img src="images/ellipse_empty.svg">
             </div>
-        </section>
-        <section id="subscribe">
-            <h3 class="sectionHeader">Sign up for news</h3>
-            <p>Get news from Austin Boxer Rescue in your inbox</p>
-            <div id="emailInput">
-                <input placeholder="Enter Email">
-                <button>SIGN UP</button>
-            </div>
-            <div id="checkboxInput">
-                <input type="checkbox">
-                <p>By clicking, yes I agree to be contacted by Austin Boxer Rescue</p>
-            </div>
-            <span>By submitting this form, you are consenting to receive marketing emails from: Austin Boxer Rescue, P.O. Box 14421 , Austin, TX, 78761. You can revoke your consent to receive emails at any time by using the SafeUnsubscribe® link, found at the bottom of every email. Emails are serviced by Constant Contact</span>
-        </section>
-        <footer>
-            <div id="footer">
-                <img id="footerLogo" src="images/abrLogo.png">
-                <div>
-                    <p>P.O. Box 14421</p>
-                    <p>Austin, Texas 78761</p>
-                    <br>
-                    <p>info@austinboxerrescue.com</p>
-                    <p>Phone: 888-333-2368</p>
-                    <p>Fax: 512-727-1000</p>
-                </div>
-                <div id="icons">
-                    <img src="images/Facebook Icon.svg">
-                    <img src="images/Twitter Icon.svg">
-                    <img src="images/Instagram Icon.svg">
-                    <img src="images/Youtube Icon.svg">
-                </div>
-                <div id="links">
-                    <a href="#">Adoption</a>
-                    <a href="waysToHelp.html">Ways to Help</a>
-                    <a href="#">Re-homing</a>
-                    <a href="#">Resources</a>
-                    <a href="#">Merch</a>
-                </div>
-            </div>
-            <div id="copyright">
-                <p>© 2021 Austin Boxer Rescue. All rights reserved. ABR is a 501(c)(3) Nonprofit Organization </p>
-            </div>
-        </footer>
-        <div id="donateModal">
-            <div>
-                <div style="display: flex; justify-content: flex-end;">
-                    <img src="images/close.svg">
-                </div>
-                <div id="donateOptions">
-                    <div id="10" class="pill inactive donation">$10/MONTH</div>
-                    <div id="25" class="pill inactive donation">$25/MONTH</div>
-                    <div id="50" class="pill inactive donation">$50/MONTH</div>
-                    <div id="100" class="pill inactive donation">$100/MONTH</div>
-                </div>
-                <span id="continueButton" class="pill">CONTINUE</span>
-            </div>
         </div>
-    </body>
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </section>
+    <section class="conatiner yellowBg py-5 d-flex justify-content-center align-items-center" id="subscribe">
+        <div class="d-flex flex-column align-items-center justify-content-center py-3 w-75">
+            <h3 class="sectionHeader textHighlight fw-bold mb-4">Sign up for news</h3>
+            <p class="fw-light mb-4">Get news from Austin Boxer Rescue in your inbox</p>
+            <div class="d-flex justify-content-center w-100">
+                <input id="emailInput" placeholder="Enter Email">
+                <button class="btn btn-primary">SIGN UP</button>
+            </div>
+            <div class="d-flex justify-content-start align-items-center py-3 w-100" id="checkboxInput">
+                <input type="checkbox">
+                <p class="my-0 ms-2">By clicking, yes I agree to be contacted by Austin Boxer Rescue</p>
+            </div>
+            <span style="font-size: 10px;" class="fw-light">By submitting this form, you are consenting to receive marketing emails from: Austin Boxer Rescue,
+                P.O. Box
+                14421 , Austin, TX, 78761. You can revoke your consent to receive emails at any time by using the
+                SafeUnsubscribe®
+                link, found at the bottom of every email. Emails are serviced by Constant Contact</span>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid py-5 px-5 beigeBg" id="footer">
+            <div class="d-flex align-items-center justify-content-center">
+                <img class="me-5 logoImage" src="images/abrLogo.png">
+                <div>
+                    <p class="m-0 fw-light">P.O. Box 14421</p>
+                    <p class="m-0 fw-light">Austin, Texas 78761</p>
+                    <br>
+                    <p class="m-0 fw-light">info@austinboxerrescue.com</p>
+                    <p class="m-0 fw-light">Phone: 888-333-2368</p>
+                    <p class="m-0 fw-light">Fax: 512-727-1000</p>
+                </div>
+                <div class="d-flex mx-5 px-5" id="icons">
+                    <img class="me-3" src="images/Facebook Icon.svg">
+                    <img class="me-3" src="images/Twitter Icon.svg">
+                    <img class="me-3" src="images/Instagram Icon.svg">
+                    <img class="me-3" src="images/Youtube Icon.svg">
+                </div>
+                <div class="container justify-self-end" id="links">
+                    <div class="row">
+                        <div class="col py-3"><a href="#">Adoption</a></div>
+                        <div class="col py-3"><a href="waysToHelp.html">Ways to Help</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="col py-3"><a href="#">Re-homing</a></div>
+                        <div class="col py-3"><a href="#">Resources</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="col py-3">
+                            <a href="#">Merch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <div class="yellowBg d-flex justify-content-center align-items-center py-3" id="copyright">
+            <p class="m-0 fs-6 fw-light">© 2021 Austin Boxer Rescue. All rights reserved. ABR is a 501(c)(3) Nonprofit Organization </p>
+        </div>
+        </div>
+    </footer>
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </html>

@@ -1,0 +1,61 @@
+.yellowBg {
+    background-color: #FBD148;
+}
+
+.navyBg {
+    background-color: #294F6B;
+}
+
+.beigeBg {
+    background-color: #F4ECE2;
+}
+
+.textHighlight {
+    color: #2d72c2;
+}
+
+.textInverse {
+    color: white;
+}
+
+.logoImage {
+    height: 150px;
+}
+
+.row>* {
+    padding: 0;
+}
+
+#merchandise img {
+    height: 200px;
+    margin-bottom: 24px;
+}
+
+#emailInput {
+    border-radius: 8px;
+    border: 0;
+    box-shadow: 0 2px 2px 2px rgb(0, 0, 0, .2);
+    flex-grow: 1;
+    margin-right: 8px;
+    padding-left: 8px;
+}
+
+.nav-item {
+    margin: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #2D72C2;
+    font-weight: bold;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #2D72C2;
+}
+
+.btn-warning {
+    color: white;
+    background-color: #FF9F41;
+}
